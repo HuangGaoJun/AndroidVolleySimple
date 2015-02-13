@@ -15,7 +15,12 @@
             </intent-filter>
         </activity>
 
-
+        <activity android:name=".ui.BaseActivity"></activity>
+        <activity android:name=".ui.SimpleRequetActivity"></activity>
+        <activity android:name=".ui.GsonRequestActivity"></activity>
+        <activity android:name=".ui.JsonRequestActivity"></activity>
+        <activity android:name=".ui.ParamsRequestActivity"></activity>
+        <activity android:name=".ui.ImageLoadingActivity"></activity>
     </application>
 
 </manifest>

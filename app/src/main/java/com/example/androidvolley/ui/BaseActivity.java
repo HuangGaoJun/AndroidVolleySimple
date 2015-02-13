@@ -2,6 +2,7 @@ package com.example.androidvolley.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -37,6 +38,7 @@ public class BaseActivity extends Activity {
             @Override
             public void onErrorResponse(VolleyError volleyError) {
                 Toast.makeText(activity,volleyError.getMessage(),Toast.LENGTH_SHORT).show();
+                Log.e("TAG",volleyError.getMessage(),volleyError);
             }
         };
     }

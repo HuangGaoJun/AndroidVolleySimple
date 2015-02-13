@@ -23,6 +23,8 @@ public class SimpleRequetActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_simple_request);
 
+        mTvResult = (TextView)findViewById(R.id.tv_result);
+
         Button btnRequest = (Button)findViewById(R.id.btn_simple_request);
         btnRequest.setOnClickListener(new View.OnClickListener() {
             @Override
